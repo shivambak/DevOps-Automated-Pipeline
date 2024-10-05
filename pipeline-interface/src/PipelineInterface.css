@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.PipelineInterface {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+
+.PipelineInterfaceHeaderBar {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+h1, h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #007acc;
+}
+
+button {
+  background-color: #007acc;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+textarea {
+  background-color: #252526;
+  border: 1px solid #555;
+  color: #d4d4d4;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid #007acc;
+}
+
+.CodeEditor {
+  background-color: #252526;
+  border: 1px solid #555;
+  color: #d4d4d4;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+}
+
+.CodeEditor:focus {
+  outline: none;
+  border: 1px solid #007acc;
+}
+
+label {
+  font-size: 1.2em;
+  color: #007acc;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.token.operator,
+.token.punctuation {
+  background: none !important; /* Remove background for operators, punctuation, keywords */
+}
