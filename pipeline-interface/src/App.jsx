@@ -12,6 +12,15 @@ function App() {
         const urlParams = new URLSearchParams(queryString);
         const codeParam = urlParams.get("code");
         console.log(codeParam);
+
+        //leave webpage for awhile and come back and still be logged in with github
+
+        if(codeParam && (localStorage.getItem("accessToken") === null)){
+            
+        }
+
+
+
     }, []);
 
     function loginWithGithub() {
